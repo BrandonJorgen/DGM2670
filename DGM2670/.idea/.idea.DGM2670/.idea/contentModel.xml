@@ -6,10 +6,14 @@
     <e p="C:\Users\10782743\Documents\DGM2670\DGM2670" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Scripts" t="Include">
-          <e p="FloatData.cs" t="Include" />
-          <e p="ImageController.cs" t="Include" />
-          <e p="TriggerBehavior.cs" t="Include" />
+        <e p="Anthony Stuff" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="FloatData.cs" t="Include" />
+            <e p="GameAction.cs" t="Include" />
+            <e p="GameActionHandler.cs" t="Include" />
+            <e p="ImageController.cs" t="Include" />
+            <e p="TriggerBehavior.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="DGM2670.sln" t="IncludeFlat" />

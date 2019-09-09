@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
@@ -13,13 +12,13 @@ public class ImageController : MonoBehaviour
         imageComponent = GetComponent<Image>();
     }
 
-    public void UpdateImageComponent()
+    public void UpdateImageComponent(float amount)
     {
-        imageComponent.fillAmount = floatDataObj.value;
+        imageComponent.fillAmount += amount;
     }
 
-    private void Update()
+    public void UpdateImageComponent(FloatData dataObj)
     {
-        UpdateImageComponent();
+        imageComponent.fillAmount = floatDataObj.value;
     }
 }
