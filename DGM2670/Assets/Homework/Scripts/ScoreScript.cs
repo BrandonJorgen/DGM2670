@@ -16,6 +16,5 @@ public class ScoreScript : MonoBehaviour
 	private void UpdateScore()
 	{
 		scoreText.text = data.value.ToString();
-		Debug.Log("Updated Score");
 	}
 }
