@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerScript : MonoBehaviour
     private Vector3 position;
     public FloatData PlayerHealth;
     private Animator animator;
+    public UnityAction action;
+    public UnityEvent moveLeft, moveRight, moveUp, moveDown;
     
     private void Start()
     {
@@ -21,7 +24,7 @@ public class PlayerScript : MonoBehaviour
         position = transform.TransformDirection(position);
         position.y -= gravity * Time.deltaTime;
         
-        if (controller.enabled)
+        /*if (controller.enabled)
         {
             controller.Move(position * Time.deltaTime);
 
@@ -70,6 +73,11 @@ public class PlayerScript : MonoBehaviour
             {
                 animator.SetBool("MovingDown", false);
             }
-        }
+        }*/
+    }
+
+    public void MoveLeft()
+    {
+        
     }
 }
