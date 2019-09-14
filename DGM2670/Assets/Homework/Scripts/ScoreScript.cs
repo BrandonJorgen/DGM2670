@@ -1,50 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class ScoreScript : MonoBehaviour
 {
+	public GameAction action;
+	public FloatData data;
+	private TextMeshProUGUI scoreText;
 
-	public FloatData value;
-	public UnityEvent ScoreZero, ScoreOne, ScoreTwo, ScoreThree, ScoreFour, ScoreFive, ScoreSix;
-	
-	// Update is called once per frame
-	void Update ()
+	private void Start()
 	{
-		if (value.value == 0)
-		{
-			ScoreZero.Invoke();
-		}
-		
-		if (value.value == 1)
-		{
-			ScoreOne.Invoke();
-		}
-		
-		if (value.value == 2)
-		{
-			ScoreTwo.Invoke();
-		}
-		
-		if (value.value == 3)
-		{
-			ScoreThree.Invoke();
-		}
-		
-		if (value.value == 4)
-		{
-			ScoreFour.Invoke();
-		}
-		
-		if (value.value == 5)
-		{
-			ScoreFive.Invoke();
-		}
-		
-		if (value.value == 6)
-		{
-			ScoreSix.Invoke();
-		}
+		scoreText = GetComponent<TextMeshProUGUI>();
+		action.action += UpdateScore;
+	}
+
+	private void UpdateScore()
+	{
+		scoreText.text = data.value.ToString();
+		Debug.Log("Updated Score");
 	}
 }
