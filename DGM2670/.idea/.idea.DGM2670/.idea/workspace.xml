@@ -27,6 +27,8 @@
         <option value="$PROJECT_DIR$/Assets/Anthony Stuff/Scripts/GameAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Anthony Stuff/Scripts/GameActionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Anthony Stuff/Scripts/ImageController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Anthony Stuff/Scripts/PowerBooster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Anthony Stuff/Scripts/FloatData.cs" />
       </list>
     </option>
   </component>
@@ -80,6 +82,8 @@
       <workItem from="1566415694346" duration="1248000" />
       <workItem from="1567624663985" duration="3651000" />
       <workItem from="1568058138845" duration="2774000" />
+      <workItem from="1568228794267" duration="1810000" />
+      <workItem from="1568661216541" duration="3915000" />
     </task>
     <servers />
   </component>

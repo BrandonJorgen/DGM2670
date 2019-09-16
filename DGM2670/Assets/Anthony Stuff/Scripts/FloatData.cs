@@ -35,4 +35,9 @@ public class FloatData : ScriptableObject
         }
         UpdateValueLimitZero(amount);
     }
+
+    public void SetValue(float amount)
+    {
+        value = amount;
+    }
 }
