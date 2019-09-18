@@ -10,11 +10,11 @@ public class PauseBehavior : MonoBehaviour
     {
         if (Time.timeScale >= 1)
         {
-            action.action += ZeroTimeScale;
+            action.action+= ZeroTimeScale;
         }
-        else
+        else if (Time.timeScale <= 0)
         {
-            action.action += OneTimeScale;
+            action.action = OneTimeScale;
         }
     }
 
