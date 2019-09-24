@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class MainMenuLogic : MonoBehaviour
 {
+    public AudioMixer mixer;
+    
     public void LoadLevel(int index)
     {
         SceneManager.LoadScene(index);
@@ -18,5 +21,10 @@ public class MainMenuLogic : MonoBehaviour
     {
         QualitySettings.SetQualityLevel(qualityIndex);
         Debug.Log(qualityIndex);
+    }
+    
+    public void SetVolume(float volume)
+    {
+        mixer.SetFloat("volume", volume);
     }
 }
