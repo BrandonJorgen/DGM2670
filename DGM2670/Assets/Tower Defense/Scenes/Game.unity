@@ -382,6 +382,7 @@ GameObject:
   - component: {fileID: 488953588}
   - component: {fileID: 488953587}
   - component: {fileID: 488953591}
+  - component: {fileID: 488953592}
   m_Layer: 10
   m_Name: Tower
   m_TagString: Untagged
@@ -474,6 +475,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abe59c0becf4844e81db59c7c2ba267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &488953592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488953586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf344ddbec81c1543a83d8cf8bbaf35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2484f366e48439489ee3c0084fc2337, type: 2}
+        m_MethodName: GrabData
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 488953590}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &555314725
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - {fileID: 11400000, guid: a541339b999400248a41009c03cf36fe, type: 2}
+  - {fileID: 11400000, guid: a541339b999400248a41009c03cf36fe, type: 2}
   currentWave: {fileID: 11400000, guid: 9052ea8fa7e6bcd418146bed5ac74785, type: 2}
 --- !u!4 &1522185889
 Transform:
@@ -946,10 +976,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4692058338397353135, guid: 7205adb1d5d9b2f4a93239bad9342c74,
-        type: 3}
-      propertyPath: destination
-      value: 
-      objectReference: {fileID: 488953590}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7205adb1d5d9b2f4a93239bad9342c74, type: 3}

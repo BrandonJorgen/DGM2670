@@ -17,12 +17,9 @@ public class WaveSpawner : MonoBehaviour
 
     public void UpdateWave()
     {
-        currentWave.value++;
-        
-        for (int i = 0; i < currentWave.value; i++)
-        {
-            SpawnWave(i - 1);
-        }
+        //Find out when the next wave has started
+        SpawnWave(waves[0].amountToSpawn);
+        waves.RemoveAt(0);
     }
 
     public void SpawnWave(int waveToSpawn)

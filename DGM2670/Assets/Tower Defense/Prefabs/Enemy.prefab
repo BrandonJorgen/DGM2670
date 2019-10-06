@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5962196637989829312}
   - component: {fileID: 4692058338397353128}
   - component: {fileID: 4692058338397353135}
+  - component: {fileID: 4692058338397353136}
+  - component: {fileID: 5374184135719155808}
   m_Layer: 11
   m_Name: Enemy
   m_TagString: Untagged
@@ -146,4 +148,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: {fileID: 11400000, guid: e30f2e05d08669048bf6ea66f47afb71, type: 2}
-  destination: {fileID: 0}
+  destination: {fileID: 11400000, guid: e2484f366e48439489ee3c0084fc2337, type: 2}
+--- !u!114 &4692058338397353136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692058338397353134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7031c9606b935e14399c3d9641930f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 1
+--- !u!114 &5374184135719155808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692058338397353134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d90664f36b34c04c9871488ccb7defb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4692058338397353136}
+        m_MethodName: MinusValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 6c0389fa20bd2d94797739901d58093e,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

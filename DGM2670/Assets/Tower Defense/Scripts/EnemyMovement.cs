@@ -6,12 +6,12 @@ public class EnemyMovement : MonoBehaviour
 {
     private NavMeshAgent navAgent;
     public FloatData movementSpeed;
-    public Transform destination;
+    public VectorData destination;
     
     void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
         navAgent.speed = movementSpeed.value;
-        navAgent.destination = destination.position;
+        navAgent.destination = destination.vectorData;
     }
 }
