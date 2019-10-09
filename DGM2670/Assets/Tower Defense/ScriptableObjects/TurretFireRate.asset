@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e8553ebc63b9c4aa86aa01374d0d71, type: 3}
   m_Name: TurretFireRate
   m_EditorClassIdentifier: 
-  value: 0.1
+  value: 0.5
   maxValue: 0
