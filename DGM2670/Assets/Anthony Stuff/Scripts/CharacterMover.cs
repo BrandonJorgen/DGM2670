@@ -1,25 +1,15 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(CharacterController))]
-public class CharacterMover : MonoBehaviour
+[CreateAssetMenu]
+public class CharacterMover : ScriptableObject
 {
     private CharacterController controller;
     private Vector3 position;
     private int jumpCount;
     public float moveSpeed = 10f, jumpSpeed = 30f, gravity = 3f;
     public int jumpCountMax = 2;
-    
-    private void Start()
-    {
-        controller = GetComponent<CharacterController>();
-    }
 
-    void Update()
-    {
-        Move();
-    }
-
-    private void Move()
+    public void Move(CharacterController controller)
     {
         position.x = moveSpeed * Input.GetAxis("Horizontal");
         position.z = moveSpeed * Input.GetAxis("Vertical");

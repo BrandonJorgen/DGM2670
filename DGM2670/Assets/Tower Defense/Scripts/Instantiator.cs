@@ -33,6 +33,6 @@ public class Instantiator : MonoBehaviour
     public void ObjInstantiate()
     {
         Debug.Log("Starting Instantiation");
-        Instantiate(prefab, instPoint.position, prefab.transform.rotation);
+        Instantiate(prefab, instPoint.position, instPoint.transform.rotation);
     }
 }

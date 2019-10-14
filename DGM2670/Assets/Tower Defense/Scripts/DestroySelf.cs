@@ -16,6 +16,7 @@ public class DestroySelf : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("hit a enemy");
         Destroy(gameObject);
     }
 
