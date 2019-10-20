@@ -3,17 +3,15 @@
 [CreateAssetMenu]
 public class CharacterMover : ScriptableObject
 {
-    private CharacterController controller;
     private Vector3 position;
     private int jumpCount;
-    public float moveSpeed = 10f;
+    public float moveSpeed = 10f, rotationSpeed = 1f;
 
-    public void Move(CharacterController controller)
+    public void MoveCharacter(CharacterController controller)
     {
-        position.x = moveSpeed * Input.GetAxis("Horizontal");
         position.z = moveSpeed * Input.GetAxis("Vertical");
+        position.x = moveSpeed * Input.GetAxis("Horizontal");
         
         controller.Move(position * Time.deltaTime);
-        
     }
 }
