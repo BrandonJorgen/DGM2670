@@ -277,7 +277,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &221118277
 MeshCollider:
@@ -367,7 +367,9 @@ GameObject:
   - component: {fileID: 225062469}
   - component: {fileID: 225062470}
   - component: {fileID: 225062471}
-  m_Layer: 0
+  - component: {fileID: 225062473}
+  - component: {fileID: 225062472}
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225062464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -56.1, y: 0.5, z: -12.12}
+  m_LocalPosition: {x: -56.1, y: 0.6, z: -12.12}
   m_LocalScale: {x: 1.2328097, y: 0.5691147, z: 2.0147583}
   m_Children:
   - {fileID: 816966295}
@@ -536,6 +538,46 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &225062472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225062464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5199e9fe0d0c3304daf8c3527a9f7c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &225062473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225062464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d90664f36b34c04c9871488ccb7defb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 225062472}
+        m_MethodName: DestroyThis
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &555314725
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +659,7 @@ GameObject:
   - component: {fileID: 816966298}
   - component: {fileID: 816966297}
   - component: {fileID: 816966296}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -955,7 +997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1699671844}
   - component: {fileID: 1699671845}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: InstPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -990,4 +1032,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToInstatiate: {fileID: 4495682373172273067, guid: 5880fb7ca4253d1449240b30f22152e0,
     type: 3}
-  instObjs: []
+  instObjCount: {fileID: 11400000, guid: e78a92991e7f73f479645b24f8c4304a, type: 2}

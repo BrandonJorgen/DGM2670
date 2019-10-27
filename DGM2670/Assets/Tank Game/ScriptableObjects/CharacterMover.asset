@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0ec2bf27065c74ab150d3789618b51, type: 3}
   m_Name: CharacterMover
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 6
   rotationSpeed: 1
