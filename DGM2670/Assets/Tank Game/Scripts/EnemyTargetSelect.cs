@@ -5,7 +5,7 @@ public class EnemyTargetSelect : MonoBehaviour
 {
     private SphereCollider sightRange;
     private Vector3 lookDir;
-    public GameObject target;
+    private GameObject target;
     public float rotationSpeed = 1f;
     
     private void Start()
@@ -27,6 +27,6 @@ public class EnemyTargetSelect : MonoBehaviour
 
     private void Update()
     {
-        transform.rotation = Quaternion.LookRotation(transform.rotation, target.transform.rotation);
+        //transform.rotation = Quaternion.LookRotation(transform.rotation, target.transform.rotation);
     }
 }
