@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-public class KeyPressEvent : MonoBehaviour
+public class InputPressEvent : MonoBehaviour
 {
     public UnityEvent fire1Event, fire2Event, fire3Event, jumpEvent;
     

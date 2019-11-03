@@ -8,6 +8,6 @@ public class InstatiateObj : MonoBehaviour
     
     public void Spawn()
     {
-        Instantiate(prefabToInstatiate, transform.position, Quaternion.identity);
+        Instantiate(prefabToInstatiate, transform.position, transform.rotation);
     }
 }
