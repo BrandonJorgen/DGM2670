@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class TimedInstantiateObj : MonoBehaviour
 {
-    public GameObject instObj, instPoint;
+    public GameObject instObj;
     public float seconds = 1f;
 
-    public void StartTimer()
+    public void Start()
     {
         StartCoroutine(TimedInstantiate());
     }
@@ -14,6 +14,6 @@ public class TimedInstantiateObj : MonoBehaviour
     IEnumerator TimedInstantiate()
     {
         yield return new WaitForSeconds(seconds);
-        Instantiate(instObj, instPoint.transform.position, instPoint.transform.rotation);
+        Instantiate(instObj, transform.position, transform.rotation);
     }
 }

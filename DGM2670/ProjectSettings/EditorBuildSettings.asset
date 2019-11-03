@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Tank Game/Scenes/MainMenu.unity
     guid: cef81fbe5ccc32c4993db9134b372194
   - enabled: 1
-    path: Assets/Tank Game/Scenes/Game.unity
+    path: Assets/Tank Game/Scenes/Tank Game - Game.unity
     guid: df48b27f62500d14fb9e327ce262f249
   m_configObjects: {}

@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d610afa6181b48946ab6a622be5babd5, type: 3}
-  m_Name: New Translate Behavior
+  m_Script: {fileID: 11500000, guid: 66e1b97ef0727044f9994c193823c63c, type: 3}
+  m_Name: UpdateScoreAction
   m_EditorClassIdentifier: 
-  speed: 1
