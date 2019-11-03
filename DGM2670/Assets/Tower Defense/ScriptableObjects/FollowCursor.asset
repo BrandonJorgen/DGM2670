@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40825dc67f500734abb58e06153d8d27, type: 3}
-  m_Name: Wave1
+  m_Script: {fileID: 11500000, guid: 2f784efe435eebb48bd0a7f360ccf508, type: 3}
+  m_Name: FollowCursor
   m_EditorClassIdentifier: 
-  numberOfEnemiesToSpawn: 1
-  delayBetweenSpawns: 0
